@@ -45,6 +45,7 @@ class Database {
                 <p>Error message: $error_message;</p>
                 <br />
         </div>
+//Make sure there is NO spaces before or after the ERR_MSG otherwise it will throw an error
 ERR_MSG;
         echo $block;
     } //END METHOD display_db_error
