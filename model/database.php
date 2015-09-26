@@ -25,7 +25,7 @@ class Database {
     if(!isset(self::$db)) {
         //try to connect to dBase w the following credentials
         try {
-            self::$db = new PDO(self::$dsn, self::$username, self::$passwd);
+            self::$db = new PDO(self::$dsn, self::$username, self::$password);
         //if there is an error - display and end the connection            
         } catch (PDOException $e) {
             self::display_db_error($e->getMessage());
